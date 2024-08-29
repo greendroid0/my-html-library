@@ -28,11 +28,12 @@
 
         <br><br>
 
-        <label for="question">Sequrity questions:</label>
+
+        <label for="question">Security questions:</label>
         <select name="question" id="question">
-            <option value="q1">What color are your favorite socks?</option>
+            <option value="q1">What is your favorite color?</option>
             <option value="q2">If you could be a vegetable, what could it be?</option>
-            <option value="q3">What is your best ever security question?</option>
+            <option value="q3">What is your favorite game?</option>
         </select>
         <br><br>
 
@@ -41,12 +42,33 @@
 
         <br><br>
 
+        <label for="pet">Do you have a pet:</label><br>
+        <input type="checkbox" id="pet" name="pet" value="cat">
+        <label for="pet">I have a cat.</label><br>
+        <input type="checkbox" id="pet" name="pet" value="dog">
+        <label for="pet">I have a dog.</label><br>
+        <input type="checkbox" id="pet" name="pet" value="fish">
+        <label for="pet">I have a fish.</label><br>
+        <input type="checkbox" id="pet" name="pet" value="no pet">
+        <label for="pet">I don't have a pet.</label><br><br>
+        <input type="submit" value="Submit">
+
+        <br><br>
+
+        <label for="birthdaytime">Enter your birthday(date and time):</label><br>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+        <input type="submit" value="Submit">
+
+        <br><br>
+
         <label for="bio">Your bio:</label><br>
         <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you..."></textarea>
         
         <br><br>
 
-        <input type="submit" value="submit the form">
+        <!-- <input type="submit" value="submit the form"> --->   
+        <button type="button" onclick="alert('Thanks for submitting!')">Submit the form</button>
+        <input type="reset" value="Reset">
 
 
     </form>
